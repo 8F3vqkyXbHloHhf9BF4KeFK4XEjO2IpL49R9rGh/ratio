@@ -21,9 +21,10 @@ local library = {
     ended = {},
     changed = {},
     folders = {
-        main = "splix",
-        assets = "splix/assets",
-        configs = "splix/configs"
+        main = "ratio",
+        assets = "ratio/assets",
+        configs = "ratio/configs",
+	scripts = "ratio/scripts"
     },
     shared = {
         initialized = false,
@@ -42,6 +43,10 @@ end
 --
 if not isfolder(library.folders.configs) then
     makefolder(library.folders.configs)
+end
+--
+if not isfolder(library.folders.scripts) then
+    makefolder(library.folders.scripts)
 end
 --
 local utility = {}
